@@ -1,16 +1,19 @@
-# Import tkinter library 
+#Importing class tkinter and renaming it tk
 import tkinter as tk
 
-#Created function for button click and print it
+
+#Creating function for button click
 def button_click():
     print("Button clicked!")
-#Create class library with root window
+
+
+#Create the root window
 root = tk.Tk()
 root.title("Button Example")
-    
-#Create the button object with 3 different arguments 
-button = tk.Button(root, text="Click me!", command=button_click)
+
+#Create Button object which will have 3 arguments
+button = tk.Button(root,text="Click Me!", command=button_click)
 button.pack()
 
-#Call the main root main loop
+#mainloop
 root.mainloop()
