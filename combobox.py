@@ -18,10 +18,10 @@ items = ["Item 1", "Item 2","Item 3","Item 4","Item 5"]
 
 #Tie the static array with the combobox created
 combo_box = ttk.Combobox(root, value=items)
-
-
 combo_box.bind("<<ComboboxSelected", on_select)
 
+#Makes the widget fill in the entire frame
 combo_box.pack()
 
+#Loops forever until user ends it
 root.mainloop()
