@@ -18,6 +18,8 @@ items = ["Item 1", "Item 2","Item 3","Item 4","Item 5"]
 
 #Tie the static array with the combobox created
 combo_box = ttk.Combobox(root, values=items)
+
+#Bind the function with selected item to the on select function
 combo_box.bind("<<ComboboxSelected>>", on_select)
 
 #Makes the widget fill in the entire frame
